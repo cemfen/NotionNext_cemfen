@@ -20,14 +20,11 @@ const Footer = () => {
         id='color-transition'
         className='h-32 bg-gradient-to-b from-[var(--heo-color-bg)] to-[var(--heo-color-card)] dark:bg-[var(--heo-color-bg-dark)] dark:from-inherit dark:to-inherit'
       />
-
       {/* 社交按钮 */}
       <div className='w-full h-24'>
         <SocialButton />
       </div>
-
       <br />
-
       {/* 底部页面信息 */}
       <div
         id='footer-bottom'
@@ -36,7 +33,6 @@ const Footer = () => {
         }`}
       >
         <div id='footer-bottom-left' className='text-center lg:text-start'>
-          <PoweredBy />
           <div className='flex gap-x-1'>
             <CopyRightDate />
             <a
@@ -48,7 +44,6 @@ const Footer = () => {
             {BIO && <span className='mx-1'> | {BIO}</span>}
           </div>
         </div>
-
         <div id='footer-bottom-right'>
           {BEI_AN && (
             <>
@@ -59,7 +54,6 @@ const Footer = () => {
             </>
           )}
           <BeiAnGongAn />
-
           <span className='hidden busuanzi_container_site_pv'>
             <i className='fas fa-eye' />
             <span className='px-1 busuanzi_value_site_pv'> </span>{' '}
@@ -68,12 +62,10 @@ const Footer = () => {
             <i className='fas fa-users' />{' '}
             <span className='px-1 busuanzi_value_site_uv'> </span>{' '}
           </span>
-
           {/* <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>{title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}</h1> */}
         </div>
       </div>
     </footer>
   )
 }
-
 export default Footer
